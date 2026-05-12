@@ -1,0 +1,427 @@
+.flex-grow-2{
+    flex-grow: 2;
+}
+
+.flex-grow-3{
+    flex-grow: 3;
+}
+
+.dashboard-sidebar{
+    width: 350px;
+    background: linear-gradient(135deg, #f5ecd7 0%, #e0c3a3 100%);
+    box-shadow: 2px 0 12px rgba(60, 40, 20, 0.08);
+    border-right: 3px solid #bfa77a;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #5a4632;
+    padding: 32px 24px;
+    min-height: 100vh;
+    transition: width 0.4s ease; /* smooth animation */
+    overflow: hidden;           /* hides content when collapsed */
+}
+
+/* Collapsed sidebar */
+.dashboard-sidebar.collapsed {
+    width: 0;
+    padding: 0 !important; /* optional: remove padding */
+    border: none; /* optional: remove border when collapsed */
+}
+
+
+.dashboard-sidebar ul li span{
+    text-decoration: none;
+    font-size: 1.15rem;
+    padding: 10px 18px;
+    display: block;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #5a4632;
+    letter-spacing: 0.03em;
+}
+
+/* ====== Literature Vibe Menu Styling ====== */
+
+/* Base styling for sidebar */
+aside {
+    background: #fdf6e3; /* parchment tone */
+    border-right: 3px solid #8b5e3c; /* old book leather color */
+    padding: 20px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+
+/* ===== Dashboard Heading ===== */
+.dashboard-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4b2e2e; /* ink brown */
+    border-bottom: 2px dashed #8b5e3c;
+    padding-bottom: 6px;
+    margin: 15px 0;
+}
+
+/* Home icon */
+.dashboard-heading .home-link {
+    color: #8b5e3c; /* leather tone */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-heading .home-link:hover {
+    color: #d4b483; /* golden ink */
+    transform: scale(1.1);
+}
+
+
+/* Main list */
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top-level menu items */
+aside > ul > li > span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4b2e2e; /* dark ink color */
+    margin: 12px 0;
+    border-bottom: 1px dashed #8b5e3c; /* like aged book margins */
+    padding-bottom: 4px;
+    cursor: default;
+}
+
+/* Submenu list */
+aside ul ul {
+    margin-top: 6px;
+    padding-left: 18px;
+    border-left: 2px solid #d4b483; /* gold-toned ink separator */
+}
+
+/* Submenu links */
+aside ul ul li a {
+    display: block;
+    text-decoration: none;
+    color: #5a3e2b;
+    padding: 5px 0;
+    font-size: 0.95em;
+    transition: all 0.3s ease;
+    font-style: italic;
+}
+
+/* Hover effect - like highlighted text */
+aside ul ul li a:hover {
+    color: #2c1b10;
+    background: #f3e0c7; /* light aged paper */
+    padding-left: 6px; /* feels like indentation */
+    border-left: 3px solid #8b5e3c;
+}
+
+/* Submenu bullets styled like quill marks */
+aside ul ul li {
+    position: relative;
+    margin: 5px 0;
+}
+
+aside ul ul li::before {
+    content: "❧"; /* medieval manuscript mark */
+    position: absolute;
+    left: -18px;
+    color: #8b5e3c;
+    font-size: 0.9em;
+}
+
+
+/* Main content  */
+
+/* ====== Literature Vibe Dashboard ====== */
+
+.dashboard-main {
+    background: #fdfaf3; /* parchment-like background */
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #3b2a20; /* ink brown */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top navigation bar */
+.dashboard-main-nav {
+    background: #8b5e3c; /* leather-bound book tone */
+    color: #fdfaf3;
+    border-bottom: 3px solid #d4b483; /* golden trim */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Nav items */
+.dashboard-main-nav nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hamburger menu */
+.dashboard-main-nav .hamburger svg {
+    color: #fdfaf3; /* parchment ink */
+    transition: transform 0.3s ease;
+}
+
+.dashboard-main-nav .hamburger:hover svg {
+    transform: scale(1.1);
+    color: #d4b483; /* golden ink */
+}
+
+/* User profile section */
+.dashboard-main-nav li span {
+    font-size: 1em;
+    color: #fdfaf3;
+    font-style: italic;
+}
+
+.dashboard-main-nav img {
+    border: 2px solid #d4b483; /* golden frame */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Main container */
+.dashboard-main .dashboard-container {
+    background: #fffdf6; /* aged paper */
+}
+
+/* Titles */
+.dashboard-main h1 {
+    font-size: 1.8em;
+    color: #4b2e2e;
+    border-bottom: 2px dashed #8b5e3c;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.dashboard-main p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    font-style: italic;
+    color: #5a3e2b;
+}
+
+/* ====== Literature Vibe Form ====== */
+
+form {
+    background: #fffdf6; /* parchment-like background */
+    border: 2px solid #d4b483; /* golden frame */
+    border-radius: 6px;
+    padding: 20px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    max-width: 600px;
+}
+
+/* Labels */
+form .form-group label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #4b2e2e; /* ink brown */
+    margin-bottom: 6px;
+    display: block;
+    font-style: italic;
+}
+
+/* Inputs & textarea */
+form .form-control {
+    background: #fdf6e3; /* aged paper */
+    border: 1px solid #8b5e3c; /* leather ink */
+    border-radius: 4px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 0.95em;
+    color: #3b2a20;
+    transition: all 0.3s ease;
+}
+
+/* Inputs focus effect */
+form .form-control:focus {
+    outline: none;
+    border-color: #d4b483; /* golden ink */
+    box-shadow: 0 0 6px rgba(212, 180, 131, 0.6);
+    background: #fffbea; /* lighter parchment */
+}
+
+/* Submit button */
+form .btn-primary {
+    background: #8b5e3c; /* leather brown */
+    border: 2px solid #d4b483; /* golden trim */
+    font-weight: bold;
+    font-family: inherit;
+    padding: 10px 18px;
+    transition: all 0.3s ease;
+}
+
+form .btn-primary:hover {
+    background: #5a3e2b; /* darker leather */
+    border-color: #c9a66b;
+    color: #fffdf6;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Table styles  */
+
+.literature-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    background-color: #fdfcf7;
+    border: 2px solid #8b6b3f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.literature-table th {
+    background-color: #e6d8b5;
+    color: #3b2f2f;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px;
+    border-bottom: 2px solid #8b6b3f;
+}
+
+.literature-table td {
+    padding: 12px;
+    border-bottom: 1px solid #d8c9a5;
+    color: #3b2f2f;
+}
+
+.literature-table tr:nth-child(even) {
+    background-color: #f6f1e3;
+}
+
+.literature-table tr:hover {
+    background-color: #efe6d2;
+}
+
+.btn-edit, .btn-delete {
+    padding: 6px 12px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Georgia', serif;
+}
+
+.btn-edit {
+    background-color: #7c5832;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #5c4125;
+}
+
+.btn-delete {
+    background-color: #a23a3a;
+    color: #fff;
+    margin-left: 6px;
+}
+
+.btn-delete:hover {
+    background-color: #7a2b2b;
+}
+
+
+/* === Edit Profile Page === */
+
+/* Page Header */
+.page-header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    color: #5c4125;
+}
+
+.page-header p {
+    font-size: 1rem;
+    color: #6b5a3d;
+    margin-bottom: 1.5rem;
+}
+
+/* Form */
+
+/* Labels */
+.profile-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+    color: #3b2f2f;
+}
+
+/* Inputs, Textareas, Select */
+.profile-form input[type="text"],
+.profile-form input[type="email"],
+.profile-form textarea,
+.profile-form select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #c2b08b;
+    border-radius: 4px;
+    background-color: #fffdf8;
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    color: #3b2f2f;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Focus effect */
+.profile-form input:focus,
+.profile-form textarea:focus,
+.profile-form select:focus {
+    outline: none;
+    border-color: #8b6b3f;
+    background-color: #fffaf0;
+    box-shadow: 0 0 6px rgba(139, 107, 63, 0.3);
+}
+
+/* Textarea */
+.profile-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Buttons */
+.form-actions {
+    margin-top: 1.5rem;
+}
+
+.form-actions .btn-edit,
+.form-actions .btn-delete {
+    padding: 10px 16px;
+    font-size: 15px;
+}
+
+select.custom-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #c2b08b;
+    border-radius: 4px;
+    background-color: #fffdf8;
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    color: #3b2f2f;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.book-table-img {
+    width: 60px;
+    height: 80px;
+    border: 1px solid #c2b08b;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
