@@ -1,5 +1,5 @@
 <?php 
-    require_once __DIR__ . "/../../db/connect.php";
+    require_once "../../header.php";
 
     if (!isset($_GET['id'])) {
         header("Location: view-borrows.php");
@@ -32,7 +32,6 @@
         die("Record not found!");
     }
 
-    include "../../header.php";
 ?>
 
     <div class="dashboard d-flex">
